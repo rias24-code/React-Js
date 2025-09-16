@@ -1,0 +1,63 @@
+.outerBtn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.outerBtn:hover { background: #0056b3; }
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+.input-container { display: flex; gap: 10px; margin-bottom: 20px; }
+.input-container input {
+  flex: 1; padding: 10px; border: 1px solid #ccc;
+  border-radius: 8px; font-size: 16px;
+}
+.input-container button {
+  padding: 10px 15px; border: none; border-radius: 8px;
+  font-size: 14px; cursor: pointer; transition: background 0.2s;
+}
+.input-container button:first-of-type { background: #6c757d; color: white; }
+.input-container button:first-of-type:hover { background: #5a6268; }
+.input-container button:last-of-type { background: #28a745; color: white; }
+.input-container button:last-of-type:hover { background: #218838; }
+
+.list-container ul { list-style: none; padding: 0; margin: 0; }
+.list-container li {
+  display: flex; align-items: center; justify-content: space-between;
+  background: #ffffff; padding: 12px; margin-bottom: 10px;
+  border-radius: 8px; transition: box-shadow 0.2s ease;
+}
+.list-container li:hover { box-shadow: 0px 4px 8px rgba(0,0,0,0.1); }
+.list-container input[type="checkbox"] {
+  margin-right: 10px; cursor: pointer; transform: scale(1.2);
+}
+.list-container label { flex: 1; font-size: 16px; color: #333; }
+.list-container label.checked { text-decoration: line-through; color: gray; }
+.list-container button {
+  margin-left: 6px; padding: 6px 12px; border: none; border-radius: 6px;
+  cursor: pointer; font-size: 14px;
+}
+.list-container button:first-of-type { background-color: #ffc107; color: black; }
+.list-container button:first-of-type:hover { background-color: #e0a800; }
+.list-container button:last-of-type { background-color: #dc3545; color: white; }
+.list-container button:last-of-type:hover { background-color: #b02a37; }
+
+@media (max-width: 500px) {
+  .input-container { flex-direction: column; }
+  .input-container button { width: 100%; }
+  .list-container li { flex-direction: column; align-items: flex-start; }
+  .list-container button { margin-top: 8px; }
+}
